@@ -9,6 +9,7 @@ print( "#"*40)
 
 # 패키지 모듈의 구성 요소(변수, 함수) 임포트
 from myPkg1.myMod1 import a, b, myFun
+
 print( a )
 print( b )
 print( myFun() )

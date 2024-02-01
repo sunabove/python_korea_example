@@ -1,5 +1,5 @@
 a = 12
-b = "myPkg1 > myMod2"
+b = __name__ # 모듈 네임
 
 def myFun() :
      return "myFun " + b
