@@ -8,7 +8,7 @@ item = "Apple"
 unit_price = 2345.744
 count = 1234
 
-print( item + " price : " + str( unit_price ) + " * " + str( count ) + " = " + str(unit_price*count)  )
+print( item + " price : " + str( unit_price ) + " * " + str( count ) + " = " + str( unit_price*count )  )
 
 # % string formatting
 
