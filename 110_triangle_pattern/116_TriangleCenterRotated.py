@@ -1,9 +1,9 @@
-for i in range( 1, 10 ) :
+for i in range( 9 ) :
 
-    if i > 5 : 
-        i = 10 - i
+    if i > 4 : 
+        i = 8 - i
     
-    for k in range( i ) :
+    for k in range( i + 1 ) :
         print( "* ", end="" )
     pass
 

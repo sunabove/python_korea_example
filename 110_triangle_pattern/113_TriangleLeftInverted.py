@@ -1,5 +1,6 @@
-for i in range( 9, 0, -1 ) :
-    for k in range( i ) :
+for i in range( 10 ) :
+
+    for k in range( 10 - i ) :
         print( "* ", end="" )
     pass
 

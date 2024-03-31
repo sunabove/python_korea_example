@@ -1,19 +1,19 @@
-for i in range( 1, 10 ) :
+for i in range( 9 ) :
 
     for m in range(2) :
-        if i > 5 :
-            i = 10 - i
+        if i > 4 :
+            i = 8 - i
         pass
         
-        for k in range( 5 - i ) :
+        for k in range( 4 - i ) :
             print( " ", end="" )
         pass
 
-        for k in range( i ) :
+        for k in range( i + 1 ) :
             print( "* ", end="" )
         pass
 
-        for k in range( 5 - i ) :
+        for k in range( 4 - i ) :
             print( " ", end="" )
         pass
     pass

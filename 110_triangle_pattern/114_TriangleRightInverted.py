@@ -1,9 +1,10 @@
-for i in range( 9, 0, -1 ) :
+for i in range( 10 ) :
+    
     for k in range( 18 - 2*i ) :
         print( " ", end="" )
     pass
 
-    for k in range( i ) :
+    for k in range( i + 1 ) :
         print( "* ", end="" )
     pass
 
