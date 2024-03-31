@@ -1,6 +1,10 @@
-for i in range( 9, 0, -1 ) :
+for i in range( 1, 10 ) :
+
+    if i > 5 :
+        i = 10 - i
+    pass
     
-    for k in range( 9 - i ) :
+    for k in range( 5 - i ) :
         print( " ", end="" )
     pass
 
