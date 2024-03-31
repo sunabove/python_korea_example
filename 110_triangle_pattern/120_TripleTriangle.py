@@ -1,6 +1,6 @@
 for r in range( 2 ) : 
     for i in range( 5 ) :
-        for k in range( 10 - i ) :
+        for k in range( (1 - r)*(10 - i) ) :
             print( "_", end="" )
         pass
 
@@ -8,7 +8,7 @@ for r in range( 2 ) :
             print( "* ", end="" )
         pass
 
-        for k in range( 10 - i ) :
+        for k in range( (1 - r)*(10 - i) ) :
             print( "_", end="" )
         pass
 

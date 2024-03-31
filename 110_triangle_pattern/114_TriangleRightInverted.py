@@ -1,4 +1,4 @@
-for i in range( 10 ) :
+for i in range( 9, -1, -1 ) :
     
     for k in range( 18 - 2*i ) :
         print( " ", end="" )
