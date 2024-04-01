@@ -1,6 +1,6 @@
-for r in range( 2 ) :
+for r in range( 3 ) :
     for i in range( 5 ) :
-        for c in range( 5 - 5*r ):
+        for c in range( 10 - 5*r ):
             print( " ", end="" )
 
         for c in range( r + 1 ) : 
