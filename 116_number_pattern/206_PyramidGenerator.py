@@ -1,9 +1,9 @@
-for i in range( 7, -3, -1 ) :
+for i in range( 9 ) :
 
     a = 0
-    for k in range( 9, i + 1, -1 ) :
-        a = a*10 + k
+    for k in range( i + 1 ) :
+        a = a*10 + 1
 
-    print( f"{a:>10} * 9 {['-', '+'][ i > -1 ]} {abs(i)} = {a*9 + i}" )
+    print( f"{f'{a} * {a}':>21} = {a*a}" )
 
 pass
