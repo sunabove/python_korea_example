@@ -2,43 +2,50 @@ size = 5
 
 n = [ ]
 
-for r in range( size + 2 ) :
-    v = 0 if 0 < r < size + 1 else -1 
-
-    m = [ ]
-    m.append( -1 )
-    m.extend( [v]*size )
-    m.append( -1 )
-
-    n.append( m )
+for row in range( size ) :
+    n.append( [0]*size )
 pass
 
-r = 1
-c = 1
-dir = 0 
+row = 0
+col = 0
+direction = 0 
 
 for i in range( 1, size*size + 1 ) :
-    n[r][c] = i 
+    n[row][col] = i 
 
-    if n[r][c+1] == 0 :
-        dir = 0
-        c += 1
-    elif n[r+1][c] == 0 :
-        dir = 1
-        r += 1
-    elif n[r-1][c] == 0 :
-        dir = 3
-        r -= 1
-    elif n[r][c -1] == 0 :
-        dir = 4
-        c -= 1
+    # 다음 위치 계산
+    if direction == 0:  # 오른쪽으로 이동
+        if col < size - 1 and n[row][col + 1] == 0:
+            col += 1
+        else:
+            direction = 1
+            row += 1
+    elif direction == 1:  # 아래로 이동
+        if row < size - 1 and n[row + 1][col] == 0:
+            row += 1
+        else:
+            direction = 2
+            col -= 1
+    elif direction == 2:  # 왼쪽으로 이동
+        if col > 0 and n[row][col - 1] == 0:
+            col -= 1
+        else:
+            direction = 3
+            row -= 1
+    elif direction == 3:  # 위로 이동
+        if row > 0 and n[row - 1][col] == 0:
+            row -= 1
+        else:
+            direction = 0
+            col += 1
     pass
 
 pass
 
-for m in n[ 1 : -1 ] :
-    for v in m[ 1 : -1 ] :
+for m in n :
+    for v in m :
         print( f"{v:>3d}", end="" )
     pass
+
     print()
 pass
